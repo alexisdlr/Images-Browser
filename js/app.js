@@ -72,8 +72,8 @@ const mostrarImagenes = imagenes => {
             <img class="w-full" src="${largeImageURL}" alt="image pixabax" loading="lazy">
 
             <div class="p-4"> 
-              <p class="font-bold"><span class="text-blue-800">${likes} </span>Me gusta</p>
-              <p class="font-bold"><span class="text-blue-800">${views} </span>De Visitas</p>
+              <p class="font-bold"><span class="text-blue-800">${likes} </span>Likes</p>
+              <p class="font-bold"><span class="text-blue-800">${views} </span>Views</p>
 
               <a href="${largeImageURL}" target="_blank" rel="noopener noreferrer" 
               class="block w-full bg-blue-700 text-white mt-3 hover:bg-blue-500 py-2 rounded-md  font-bold text-center">Ver Imagen</a>
