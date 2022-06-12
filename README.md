@@ -4,5 +4,6 @@ Image browser made with HTML5, Javascript, Tailwind CSS and using the Pixabay AP
 
 <img src='project finished/ex.jpg' alt='image project'/>
 
-<p>Link to vercel project: <a href='https://images-browser.vercel.app/' target='_blank'</a> </p>
+<p>Link to vercel project: <a href='https://images-browser.vercel.app/' target='_blank'>Here</a></p>
+
 
