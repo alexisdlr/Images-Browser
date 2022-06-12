@@ -76,7 +76,7 @@ const mostrarImagenes = imagenes => {
               <p class="font-bold"><span class="text-blue-800">${views} </span>Views</p>
 
               <a href="${largeImageURL}" target="_blank" rel="noopener noreferrer" 
-              class="block w-full bg-blue-700 text-white mt-3 hover:bg-blue-500 py-2 rounded-md  font-bold text-center">Ver Imagen</a>
+              class="block w-full bg-blue-700 text-white mt-3 hover:bg-blue-500 py-2 rounded-md  font-bold text-center">View image</a>
             </div>
           </div>
         </div>
