@@ -36,22 +36,27 @@ const mostrarAlerta = (mensaje) => {
   }
   
 }
-const buscarImagenes = () => {
+const buscarImagenes = async () => {
   const termino = document.querySelector('#termino').value 
 
   const key = '27581318-98cb86999a0910dcf88e38f8f'
   const url = `https://pixabay.com/api/?key=${key}&q=${termino}&per_page=${registrosPorPagina}&page=${actPage}`
   
   Spinner()
+  
+  try {
 
-  fetch(url)
-    .then(res => res.json())
-    .then(res => {
-      totalPaginas = calcPag(res.totalHits)
-      console.log(totalPaginas)
-      mostrarImagenes(res.hits)
-    })
+    const respuesta = await fetch(url)
+    const resultado = await respuesta.json()
+    totalPaginas = calcPag(resultado.totalHits)
+    mostrarImagenes(resultado.hits)
 
+  } catch (error) {
+
+    console.log(error)
+
+  }
+ 
 }
 const calcPag = total => {
   return parseInt( Math.ceil(total / registrosPorPagina))
