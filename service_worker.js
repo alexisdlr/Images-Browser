@@ -44,7 +44,6 @@ self.addEventListener('fetch', event => {
   );
 });
 
-
 self.addEventListener("push", (event) => {
   if (event.data) {
     try {
