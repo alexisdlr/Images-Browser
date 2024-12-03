@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
           return navigator.serviceWorker.ready; // Espera hasta que el Service Worker esté activo
         })
         .then(async registration => {
-          console.log('Service Worker está listo para manejar notificaciones.');
+          console.log('Service Worker está listo para manejar notificacione.');
 
           // Verificar si ya existe una suscripción
           const existingSubscription = await registration.pushManager.getSubscription();
